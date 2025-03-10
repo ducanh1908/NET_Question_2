@@ -21,6 +21,20 @@
             else
                 Console.WriteLine($"{num} khong la so ngto");
             bai5.LietKeSoNguyenTo(num);
+            Bai7 bai7 = new Bai7();
+            Console.WriteLine("Nhap vao 1 so: ");
+            string input = Console.ReadLine();
+
+            if (long.TryParse(input, out _)) // Kiểm tra xem có phải số hợp lệ không
+            {
+                Console.WriteLine("Bang chu: " + bai7.chuyenSo(input));
+            }
+            else
+            {
+                Console.WriteLine("Vui long nhap so hop le.");
+            }
+
         }
+
     }
 }
